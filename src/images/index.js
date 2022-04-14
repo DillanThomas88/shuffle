@@ -3,7 +3,6 @@ const reactjs = "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-
 
 
 function Images({title, classes}) {
-    console.log(title);
 
     const image = {
         tailwind: twcss,
