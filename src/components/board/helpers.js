@@ -46,22 +46,22 @@ export function swapTiles(e, x, direction) {
     if (o.row === p.row) {
 
         if (o.id > p.id) {
-            anim = 'animate-slidedown absolute  bg-green-300 '
-            prevAnim = 'animate-slideup absolute bottom-0 bg-green-300 '
+            anim = 'animate-slidedown absolute  bg-neutral-800 '
+            prevAnim = 'animate-slideup absolute bottom-0 bg-neutral-800 '
 
         } else {
-            anim = 'animate-slidedown absolute bottom-0 bg-green-300 '
-            prevAnim = 'animate-slideup absolute  bg-green-300 '
+            anim = 'animate-slidedown absolute bottom-0 bg-neutral-800 '
+            prevAnim = 'animate-slideup absolute  bg-neutral-800 '
         }
     } else {
 
         if (o.id > p.id) {
-            anim = 'animate-slideright absolute bg-green-300 '
-            prevAnim = 'animate-slideleft absolute right-0 bg-green-300 '
+            anim = 'animate-slideright absolute bg-neutral-800 '
+            prevAnim = 'animate-slideleft absolute right-0 bg-neutral-800 '
 
         } else {
-            anim = 'animate-slideright absolute right-0 bg-green-300 '
-            prevAnim = 'animate-slideleft absolute bg-green-300  bg-green-300 '
+            anim = 'animate-slideright absolute right-0 bg-neutral-800 '
+            prevAnim = 'animate-slideleft absolute bg-neutral-800  bg-neutral-800 '
         }
     }
 
@@ -93,7 +93,7 @@ export function placePlayer(gridsize, arr) {
 
     arr[half] = <Tile
         player={'true'}
-        style={`bg-green-300 `}
+        style={`bg-neutral-800`}
         gridSize={gridsize}
         key={arr[half].key}
         id={arr[half].key}

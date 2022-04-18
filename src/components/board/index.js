@@ -3,7 +3,8 @@ import Tile from '../tile'
 import { createGrid, placePlayer, swapTiles } from './helpers'
 
 
-function Board() {
+function Board(props) {
+
 
     const gridSize = 5
     const tileSize = 20
@@ -12,6 +13,7 @@ function Board() {
 
 
     const handleClick = (e) => {
+
         setCells(swapTiles(e, [...cells]))
     }
 
@@ -39,7 +41,7 @@ function Board() {
 
             arr[parseInt(playerID)] = <Tile
             player={'true'}
-            style={'bg-green-300'}
+            style={'bg-neutral-800 animate-stick'}
             key={arr[playerID].key}
             id={arr[playerID].props.id}
             row={arr[playerID].props.row}
@@ -50,6 +52,13 @@ function Board() {
         }, 100);
         
     },[cells])
+
+    useEffect(()=>{
+        console.log(props.direction);
+
+        // ! handle controller moves
+
+    },[props.direction])
 
 
     return(<>

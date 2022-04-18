@@ -16,6 +16,8 @@ module.exports = {
         slideright: 'slidehorizontal .1s  forwards linear',
         slideup: 'slidevertical .1s reverse forwards linear',
         slidedown: 'slidevertical .1s forwards linear',
+        stick: 'stick .75s forwards',
+        click: 'click .75s forwards'
       },
       keyframes: {
         appear: {
@@ -23,12 +25,20 @@ module.exports = {
           to: { opacity: 1 },
         },
         slidevertical: {
-          from: {height: '0em'},
-          to: {height: 'full'}
+          from: {height: '0em',backgroundColor: '#424949'},
+          to: {height: 'full', backgroundColor: '#262626'}
         },
         slidehorizontal: {
-          from: {width: '0em'},
-          to: {width: 'full'}
+          from: {width: '0em',backgroundColor: '#424949'},
+          to: {width: 'full', backgroundColor: '#262626'}
+        },
+        stick: {
+          from: {backgroundColor: '#424949'},
+          to: {backgroundColor: '#262626'}
+        },
+        click: {
+          from: {color: '#fff'},
+          to:{color: '#262626'}
         }
 
 
