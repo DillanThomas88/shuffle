@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shuffle/static/css/main.3bacf34a.css",
-    "main.js": "/shuffle/static/js/main.b4d25b72.js",
+    "main.css": "/shuffle/static/css/main.a21b8661.css",
+    "main.js": "/shuffle/static/js/main.55308a57.js",
     "static/js/787.ca78f21f.chunk.js": "/shuffle/static/js/787.ca78f21f.chunk.js",
     "static/media/menu.svg": "/shuffle/static/media/menu.7cf27330a5c50afadbd1085a4930c2ee.svg",
     "static/media/wormi.svg": "/shuffle/static/media/wormi.8445a6fa8a9f09c39f101742d6fb4e3d.svg",
@@ -12,12 +12,12 @@
     "static/media/play.svg": "/shuffle/static/media/play.30a07c217361cfa93d7f04c3d1adcfc8.svg",
     "static/media/share.svg": "/shuffle/static/media/share.6265dea54db78c330357ed3b6ecb8946.svg",
     "static/media/close.svg": "/shuffle/static/media/close.c0562c375a81476703139218b37849e1.svg",
-    "main.3bacf34a.css.map": "/shuffle/static/css/main.3bacf34a.css.map",
-    "main.b4d25b72.js.map": "/shuffle/static/js/main.b4d25b72.js.map",
+    "main.a21b8661.css.map": "/shuffle/static/css/main.a21b8661.css.map",
+    "main.55308a57.js.map": "/shuffle/static/js/main.55308a57.js.map",
     "787.ca78f21f.chunk.js.map": "/shuffle/static/js/787.ca78f21f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bacf34a.css",
-    "static/js/main.b4d25b72.js"
+    "static/css/main.a21b8661.css",
+    "static/js/main.55308a57.js"
   ]
 }
