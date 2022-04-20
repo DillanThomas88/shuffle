@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
+import {Vibration} from 'react-native'
 import Board from './components/board';
 import Controller from './components/controller';
 import { clickAnimation } from './components/controller/helpers';
@@ -14,8 +15,15 @@ function App() {
 
   const handleClick = (e) => {
     if(!start) setStart(!start)
+    // Vibration.vibrate()
+
     clickAnimation(e.target.children[0])
     setDirection(e.target.getAttribute('id'))
+    let t = setInterval(() => {
+      setDirection(null)
+      clearInterval(t)
+      
+    }, 100);
 
   //  console.log(e.target.getAttribute('id'));
   }
@@ -23,8 +31,6 @@ function App() {
 
   useEffect(() => {
     if(!start) return
-
-
     
   }, [start, direction])
 
@@ -35,7 +41,7 @@ function App() {
   return (
     <div style={{ height: window.innerHeight, width: window.innerWidth }} className="font-default overflow-hidden">
 
-      <main className='flex flex-col mt-8 justify-center items-center text-center'>
+      <main className='flex flex-col mt-8 justify-start items-center text-center'>
 
         <Board direction={direction} />
         <Controller handleClick={handleClick} />

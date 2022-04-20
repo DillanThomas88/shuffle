@@ -12,14 +12,14 @@ function Board(props) {
     const [cells,setCells] = useState(placePlayer(gridSize, createGrid(gridSize)))
 
 
-    const handleClick = (e) => {
+    const handleClick = (e, props) => {
 
         setCells(swapTiles(e, [...cells]))
     }
 
 
     useEffect(() => {
-        
+        // console.log('object');
         let prevID = null
         let playerID = null
         if(!document.querySelector('[player="prev"]')) return
@@ -54,8 +54,8 @@ function Board(props) {
     },[cells])
 
     useEffect(()=>{
-        console.log(props.direction);
-
+        if(!props.direction) return
+        setCells(swapTiles([...cells], props.direction))
         // ! handle controller moves
 
     },[props.direction])
@@ -63,7 +63,7 @@ function Board(props) {
 
     return(<>
     <div onClick={(e) => handleClick(e)}
-    className=' h-full grid grid-cols-5 content-center'>
+    className=' grid grid-cols-5'>
 
         {cells}
     </div>

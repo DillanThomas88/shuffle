@@ -1,5 +1,8 @@
 
 import Tile from "../tile"
+import { Vibration } from 'react-native'
+
+
 
 export function createGrid(gridSize) {
 
@@ -23,24 +26,56 @@ export function createGrid(gridSize) {
     return arr
 }
 
-export function swapTiles(e, x, direction) {
-    if (!e.target.classList.contains('tile')) return
-
+export function swapTiles(x, direction) {
+    if(!direction) return
+    // console.log(x);
+    // if (!e.target.classList.contains('tile')) return
     let prevSpot = document.querySelector('[player="true"]')
     let prevAnim = null
     let anim = null
+    let nextID = null
 
-    let o = {
-        id: parseInt(e.target.getAttribute('id')),
-        row: parseInt(e.target.getAttribute('row')),
-        col: parseInt(e.target.getAttribute('col')),
-    }
+
+
+
 
 
     let p = {
         id: parseInt(prevSpot.getAttribute('id')),
         row: parseInt(prevSpot.getAttribute('row')),
         col: parseInt(prevSpot.getAttribute('col')),
+    }
+
+    switch (direction) {
+        case 'up':
+            nextID = p.id - 5
+            break;
+        case 'down':
+            nextID = p.id + 5
+            break;
+        case 'left':
+            nextID = p.id - 1
+            if(!x[nextID] || x[nextID].props.col !== p.col) return x
+            break;
+        case 'right':
+            nextID = p.id + 1
+            // console.log(nextID);
+            if(!x[nextID] || x[nextID].props.col !== p.col) return x
+            break;
+
+        default:
+            break;
+    }
+
+    if(!x[nextID]) return x
+
+    
+    
+
+    let o = {
+        id: parseInt(x[nextID].props.id),
+        row: parseInt(x[nextID].props.row),
+        col: parseInt(x[nextID].props.col),
     }
 
     if (o.row === p.row) {
