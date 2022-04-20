@@ -41,7 +41,7 @@ function Board(props) {
 
             arr[parseInt(playerID)] = <Tile
             player={'true'}
-            style={'bg-neutral-800 animate-stick'}
+            style={'bg-white animate-stick'}
             key={arr[playerID].key}
             id={arr[playerID].props.id}
             row={arr[playerID].props.row}
@@ -62,7 +62,7 @@ function Board(props) {
 
 
     return(<>
-    <div onClick={(e) => handleClick(e)}
+    <div
     className=' grid grid-cols-5'>
 
         {cells}

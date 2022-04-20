@@ -25,20 +25,20 @@ module.exports = {
           to: { opacity: 1 },
         },
         slidevertical: {
-          from: {height: '0em',backgroundColor: '#424949'},
-          to: {height: 'full', backgroundColor: '#262626'}
+          from: {height: '0em',},
+          to: {height: 'full', }
         },
         slidehorizontal: {
-          from: {width: '0em',backgroundColor: '#424949'},
-          to: {width: 'full', backgroundColor: '#262626'}
+          from: {width: '0em',},
+          to: {width: 'full', }
         },
         stick: {
-          from: {backgroundColor: '#424949'},
-          to: {backgroundColor: '#262626'}
+          from: {backgroundColor: 'white'},
+          to: {backgroundColor: 'white'}
         },
         click: {
-          from: {color: '#fff'},
-          to:{color: '#262626'}
+          from: {color: '#f90'},
+          to:{color: 'white'}
         }
 
 

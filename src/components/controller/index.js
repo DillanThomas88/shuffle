@@ -7,8 +7,8 @@ function Controller(props) {
 
     return (<>
         <div onClick={props.handleClick}
-            className={`relative flex justify-center items-center w-1/3 text-neutral-800 mt-6`}>
-            <button id='left' className={`text-neutral-800`}>
+            className={`relative flex justify-center items-center w-1/3 text-white mt-6`}>
+            <button id='left' className={`text-white`}>
                 <SVG
                     title={'arrow'}
                     classes={`svg rotate-90 pointer-events-none h-20 w-20`}
@@ -16,14 +16,14 @@ function Controller(props) {
             </button>
             <div className={''} >
 
-                <button id='up' className={`text-neutral-800 mb-20`}>
+                <button id='up' className={`text-white mb-20`}>
                     <SVG
                         title={'arrow'}
                         classes={`svg rotate-180 pointer-events-none h-20 w-20`}
                     />
                 </button>
 
-                <button id='down' className={`text-neutral-800`}>
+                <button id='down' className={`text-white`}>
                     <SVG
                         title={'arrow'}
                         classes={`svg pointer-events-none h-20 w-20`}
@@ -33,7 +33,7 @@ function Controller(props) {
             </div>
 
 
-            <button id='right' className={`text-neutral-800`}>
+            <button id='right' className={`text-white`}>
                 <SVG
                     title={'arrow'}
                     classes={`svg -rotate-90 pointer-events-none h-20 w-20`}

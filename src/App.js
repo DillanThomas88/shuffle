@@ -39,7 +39,7 @@ function App() {
   },[])
 
   return (
-    <div style={{ height: window.innerHeight, width: window.innerWidth }} className="font-default overflow-hidden">
+    <div style={{ height: window.innerHeight, width: window.innerWidth }} className="font-default overflow-hidden bg-neutral-900">
 
       <main className='flex flex-col mt-8 justify-start items-center text-center'>
 

@@ -504,14 +504,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 5rem;
 }
 
-.-ml-\[1px\]{
-  margin-left: -1px;
-}
-
-.-mt-\[1px\]{
-  margin-top: -1px;
-}
-
 .flex{
   display: flex;
 }
@@ -576,24 +568,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 @-webkit-keyframes slidevertical{
   from{
     height: 0em;
-    background-color: #424949;
   }
 
   to{
     height: full;
-    background-color: #262626;
   }
 }
 
 @keyframes slidevertical{
   from{
     height: 0em;
-    background-color: #424949;
   }
 
   to{
     height: full;
-    background-color: #262626;
   }
 }
 
@@ -605,12 +593,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @keyframes slidevertical{
   from{
     height: 0em;
-    background-color: #424949;
   }
 
   to{
     height: full;
-    background-color: #262626;
   }
 }
 
@@ -621,24 +607,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 @-webkit-keyframes slidehorizontal{
   from{
     width: 0em;
-    background-color: #424949;
   }
 
   to{
     width: full;
-    background-color: #262626;
   }
 }
 
 @keyframes slidehorizontal{
   from{
     width: 0em;
-    background-color: #424949;
   }
 
   to{
     width: full;
-    background-color: #262626;
   }
 }
 
@@ -650,12 +632,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 @keyframes slidehorizontal{
   from{
     width: 0em;
-    background-color: #424949;
   }
 
   to{
     width: full;
-    background-color: #262626;
   }
 }
 
@@ -665,21 +645,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @-webkit-keyframes stick{
   from{
-    background-color: #424949;
+    background-color: white;
   }
 
   to{
-    background-color: #262626;
+    background-color: white;
   }
 }
 
 @keyframes stick{
   from{
-    background-color: #424949;
+    background-color: white;
   }
 
   to{
-    background-color: #262626;
+    background-color: white;
   }
 }
 
@@ -690,21 +670,21 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @-webkit-keyframes click{
   from{
-    color: #fff;
+    color: #f90;
   }
 
   to{
-    color: #262626;
+    color: white;
   }
 }
 
 @keyframes click{
   from{
-    color: #fff;
+    color: #f90;
   }
 
   to{
-    color: #262626;
+    color: white;
   }
 }
 
@@ -741,14 +721,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
-.border-neutral-100{
+.border-white{
   --tw-border-opacity: 1;
-  border-color: rgb(245 245 245 / var(--tw-border-opacity));
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-neutral-800{
+.bg-neutral-900{
   --tw-bg-opacity: 1;
-  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -764,9 +744,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Montserrat;
 }
 
-.text-neutral-800{
+.text-white{
   --tw-text-opacity: 1;
-  color: rgb(38 38 38 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .outline{
@@ -777,6 +757,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline-width: 1px;
 }
 
-.outline-neutral-300{
-  outline-color: #d4d4d4;
+.outline-white{
+  outline-color: #fff;
 }
